@@ -1,0 +1,19 @@
+.panel {
+  visibility: hidden;
+  background-color: var(--background);
+  transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.panel.previous {
+  transform: translateX(-100%);
+}
+
+.panel.next {
+  transform: translateX(100%);
+}
+
+.panel.visible {
+  visibility: visible;
+  transform: translateX(0);
+  opacity: 1;
+}
